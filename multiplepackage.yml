@@ -1,0 +1,14 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: update apt cache and install Vim, Curl & Unzip packag
+      apt:
+         name: "{{items}}"
+         update_apt cache
+      loop:                                
+         - vim
+         - curl
+         - unzip
+
+  
