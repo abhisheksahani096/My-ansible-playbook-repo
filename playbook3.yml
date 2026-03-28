@@ -1,0 +1,8 @@
+- hosts: all
+  vars:
+    name: Batch-31 Playbook
+
+  tasks:
+    -name: Ansible basic variable example
+     debug: 
+     msg: "{{ name }}"
