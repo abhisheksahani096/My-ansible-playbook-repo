@@ -1,7 +1,0 @@
----
-- hosts: webserver
-  becomes: true
-  tasks:
-  - name: create an empty file
-    file: path=/home/batch-31.txt state=touch
-     
