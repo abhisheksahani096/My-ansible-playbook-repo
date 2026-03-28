@@ -1,0 +1,13 @@
+---
+- hosts: Batch-31
+  become: true
+
+  tasks:
+  - name: Install git package
+    apt: name=git state=present
+
+  - name: Install Apache2 package
+    apt: name=apache2 state=present
+
+  - name: Start Apache2 service
+    service: name=Apache2 state=started
