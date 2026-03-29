@@ -5,7 +5,7 @@
     - name: update apt cache and install Vim, Curl & Unzip packag
       apt:
          name: "{{items}}"
-         update_apt cache
+         update_cache: yes
       loop:                                
          - vim
          - curl
